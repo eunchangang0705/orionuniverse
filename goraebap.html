@@ -7,16 +7,16 @@
   <meta name="description" content="오리온 유니버스 킹덤의 첫 번째 게임, 고래밥 별바다 탐험대 소개" />
   <title>고래밥: 별바다 탐험대 | 오리온 유니버스 킹덤</title>
   <link rel="stylesheet" href="styles.css?v=8" />
-  <link rel="stylesheet" href="premium.css?v=1" />
+  <link rel="stylesheet" href="premium.css?v=6" />
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 이동</a>
   <header class="site-header scrolled">
     <a class="brand" href="index.html" aria-label="홈으로 이동"><span class="brand-mark">O</span><span class="brand-copy"><b>ORION</b><small>UNIVERSE KINGDOM</small></span></a>
-    <nav class="desktop-nav" aria-label="주요 메뉴"><a class="active-page" href="news.html">게임</a><a href="universe.html">세계관</a><a href="factions.html">진영</a><a href="game.html">게임 소개</a></nav>
+    <nav class="desktop-nav" aria-label="주요 메뉴"><a class="active-page" href="news.html">게임</a><a href="universe.html">세계관</a><a href="game.html">소개</a></nav>
     <div class="header-actions"><button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button></div>
   </header>
-  <aside class="mobile-menu" aria-hidden="true"><div class="mobile-menu-head"><span>MENU</span><button class="menu-close" type="button" aria-label="메뉴 닫기">×</button></div><nav aria-label="모바일 메뉴"><a class="current" href="news.html">01 <span>게임</span></a><a href="universe.html">02 <span>세계관</span></a><a href="factions.html">03 <span>진영</span></a><a href="game.html">04 <span>게임 소개</span></a></nav><p>왕좌는 기다리지 않는다.</p></aside>
+  <aside class="mobile-menu" aria-hidden="true"><div class="mobile-menu-head"><span>MENU</span><button class="menu-close" type="button" aria-label="메뉴 닫기">×</button></div><nav aria-label="모바일 메뉴"><a class="current" href="news.html">01 <span>게임</span></a><a href="universe.html">02 <span>세계관</span></a><a href="game.html">03 <span>소개</span></a></nav><p>왕좌는 기다리지 않는다.</p></aside>
 
 
   <main id="main" class="voyage-page">
@@ -27,13 +27,12 @@
         <h1 id="voyage-title">고래밥<span>별바다 탐험대</span></h1>
         <p class="voyage-intro">작은 한 입에서 시작된,<br />아주 커다란 우주.</p>
         <p class="voyage-description">익숙한 고래밥 친구들과 낯선 별바다로.<br />나만의 함선을 키우고, 탐험의 끝에서 새로운 즐거움을 발견하세요.</p>
-        <div class="voyage-actions"><a class="primary-button" href="#game-intro"><span>탐험 알아보기</span><b>↓</b></a><a class="text-link" href="#shipyard">함선 미리보기 <span>↗</span></a></div>
       </div>
       <div class="expedition-chart" aria-label="별바다 탐험 항로를 표현한 그래픽">
         <div class="chart-top"><span>EXPEDITION CHART</span><span>OR—01</span></div>
         <div class="chart-orbit orbit-a"></div><div class="chart-orbit orbit-b"></div>
         <div class="chart-axis axis-x"></div><div class="chart-axis axis-y"></div>
-        <div class="chart-planet"><span>≈</span><small>STAR SEA</small></div>
+        <div class="chart-planet chart-planet-art"><img src="assets/goraebap-star-sea.png" alt="고래밥 별바다 행성" width="1254" height="1254" decoding="async" /></div>
         <div class="chart-moon moon-a">✦</div><div class="chart-moon moon-b">+</div>
         <span class="chart-label label-start">출발 / 크럼브 항구</span><span class="chart-label label-end">NEXT / 별빛 산호초</span>
         <div class="chart-bottom"><span><i></i> READY TO EXPLORE</span><span>당신의 항로를 그려보세요.</span></div>
@@ -63,7 +62,7 @@
         <button id="sector-tab-2" role="tab" aria-selected="false" aria-controls="sector-panel" tabindex="-1" data-sector="2"><span>SECTOR 03</span>밀키웨이 해류</button>
       </div>
       <div class="destination-panel" id="sector-panel" role="tabpanel" aria-labelledby="sector-tab-0" tabindex="0">
-        <div class="destination-art" data-zone="0" aria-hidden="true"><span class="destination-orbit"></span><span class="destination-core">◎</span><span class="destination-coordinate">ORION / SECTOR <b id="sector-number">01</b></span></div>
+        <div class="destination-art" data-zone="0" aria-hidden="true"><span class="destination-orbit"></span><span class="destination-core"><img class="destination-image destination-image-0" src="assets/destination-crumb.png" alt="" width="1254" height="1254" decoding="async" /><img class="destination-image destination-image-1" src="assets/destination-coral.png" alt="" width="1254" height="1254" decoding="async" /><img class="destination-image destination-image-2" src="assets/destination-milkyway.png" alt="" width="1254" height="1254" decoding="async" /></span><span class="destination-coordinate">ORION / SECTOR <b id="sector-number">01</b></span></div>
         <div class="destination-copy" aria-live="polite"><p class="eyebrow" id="sector-kicker">THE BEGINNING</p><h3 id="sector-title">모든 모험의<br />출발점.</h3><p id="sector-description">따뜻한 과자 부스러기가 떠다니는 작은 우주 항구. 함선의 기본 조작을 익히고 첫 항해를 준비하는 곳입니다.</p><dl><div><dt>탐험 테마</dt><dd id="sector-theme">첫 항해 · 기본 재료 수집</dd></div><div><dt>추천 준비</dt><dd id="sector-ready">함선 점검, 탐험 지도</dd></div></dl></div>
       </div>
     </section>
@@ -103,8 +102,8 @@
     <section class="voyage-outro"><p class="eyebrow">THE UNIVERSE TASTES DIFFERENT.</p><h2>다음 한 입은,<br />어떤 모험일까요?</h2><div><a class="primary-button dark" href="news.html"><span>다른 게임 둘러보기</span><b>↗</b></a><a href="#main" class="outro-top">처음으로 ↑</a></div><span aria-hidden="true">ORION</span></section>
   </main>
 
-  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">O</span><span class="brand-copy"><b>ORION</b><small>UNIVERSE KINGDOM</small></span></a><div class="footer-links"><a href="news.html">게임</a><a href="universe.html">세계관</a><a href="factions.html">진영</a><a href="game.html">게임 소개</a></div><p>© 2026 ORION UNIVERSE KINGDOM. ALL RIGHTS RESERVED.</p></footer>
+  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">O</span><span class="brand-copy"><b>ORION</b><small>UNIVERSE KINGDOM</small></span></a><div class="footer-links"><a href="news.html">게임</a><a href="universe.html">세계관</a><a href="game.html">소개</a></div><p>© 2026 ORION UNIVERSE KINGDOM. ALL RIGHTS RESERVED.</p></footer>
   <script src="script.js?v=8"></script>
-  <script src="goraebap.js?v=1"></script>
+  <script src="goraebap.js?v=2"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <meta name="description" content="오리온 유니버스 킹덤 — 익숙한 과자에서 시작되는 새로운 우주 모험" />
   <title>오리온 유니버스 킹덤</title>
   <link rel="stylesheet" href="styles.css?v=8" />
-  <link rel="stylesheet" href="premium.css?v=1" />
+  <link rel="stylesheet" href="premium.css?v=12" />
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 이동</a>
@@ -21,8 +21,8 @@
     <nav class="desktop-nav" aria-label="주요 메뉴">
       <a href="news.html">게임</a>
       <a href="universe.html">세계관</a>
-      <a href="factions.html">진영</a>
-      <a href="game.html">게임 소개</a>
+      
+      <a href="game.html">소개</a>
     </nav>
 
     <div class="header-actions">
@@ -41,8 +41,8 @@
     <nav aria-label="모바일 메뉴">
       <a href="news.html">01 <span>게임</span></a>
       <a href="universe.html">02 <span>세계관</span></a>
-      <a href="factions.html">03 <span>진영</span></a>
-      <a href="game.html">04 <span>게임 소개</span></a>
+      
+      <a href="game.html">03 <span>소개</span></a>
     </nav>
     <p>왕좌는 기다리지 않는다.</p>
   </aside>
@@ -77,43 +77,7 @@
         <a href="news.html">모든 게임 <span>→</span></a>
       </header>
 
-      <div class="news-grid" id="news-list">
-        <article class="news-card news-card-featured reveal">
-          <div class="card-visual visual-crown" aria-hidden="true">
-            <span class="visual-number">01</span>
-            <div class="crown-symbol">✦</div>
-          </div>
-          <div class="card-copy">
-            <p><span>고래밥</span><span>별바다 탐험대</span></p>
-            <h3><a href="goraebap.html">작은 한 입에서 시작된 우주 탐험</a></h3>
-            <span class="card-arrow">↗</span>
-          </div>
-        </article>
-
-        <article class="news-card reveal">
-          <div class="card-visual visual-war" aria-hidden="true">
-            <span class="visual-number">02</span>
-            <div class="war-lines"><i></i><i></i><i></i></div>
-          </div>
-          <div class="card-copy">
-            <p><span>함선 연구소</span><span>성장 미리보기</span></p>
-            <h3><a href="goraebap.html#shipyard">나만의 함선, 나만의 항로</a></h3>
-            <span class="card-arrow">↗</span>
-          </div>
-        </article>
-
-        <article class="news-card reveal">
-          <div class="card-visual visual-hero" aria-hidden="true">
-            <span class="visual-number">03</span>
-            <div class="helmet-symbol"></div>
-          </div>
-          <div class="card-copy">
-            <p><span>탐험 가이드</span><span>구역 둘러보기</span></p>
-            <h3><a href="goraebap.html#sectors">별바다 너머의 새로운 목적지</a></h3>
-            <span class="card-arrow">↗</span>
-          </div>
-        </article>
-      </div>
+      <div class="adventure-world-visual"><img src="assets/adventure-world.png" alt="과자 왕국과 다섯 행성, 바다와 항로가 펼쳐진 오리온 유니버스" width="1254" height="1254" loading="lazy" decoding="async" /><img class="adventure-world-logo" src="assets/orion-kingdom-title.png" alt="ORION KINGDOM" width="1774" height="887" loading="lazy" decoding="async" /></div>
     </section>
 
     <section class="universe" id="universe" aria-labelledby="universe-title">
@@ -127,43 +91,16 @@
           <div><dt>∞</dt><dd>새로운 상상</dd></div>
         </dl>
       </div>
-      <div class="universe-stage" aria-hidden="true">
-        <div class="stage-ring ring-a"></div>
-        <div class="stage-ring ring-b"></div>
-        <div class="stage-core"><span>ORION</span></div>
+      <div class="universe-stage">
+        <div class="stage-ring ring-a" aria-hidden="true"></div>
+        <div class="stage-ring ring-b" aria-hidden="true"></div>
+        <img class="universe-stage-logo" src="assets/orion-logo.png" alt="오리온 심볼" loading="lazy" decoding="async" />
         <span class="stage-label label-a">GORAEBAP</span>
         <span class="stage-label label-b">CHOCOPIE</span>
         <span class="stage-label label-c">POCACHIP</span>
       </div>
     </section>
 
-    <section class="factions section" id="factions" aria-labelledby="factions-title">
-      <header class="section-heading light reveal">
-        <div>
-          <p class="section-kicker">CHOOSE YOUR LEGACY</p>
-          <h2 id="factions-title">당신의 진영</h2>
-        </div>
-        <p class="section-note">과자 진영을 선택해 자세히 알아보세요.</p>
-      </header>
-
-      <div class="faction-tabs" role="tablist" aria-label="진영 선택">
-        <button class="active" role="tab" aria-selected="true" data-faction="goraebap">고래밥</button>
-        <button role="tab" aria-selected="false" data-faction="chocosongi">초코송이</button>
-        <button role="tab" aria-selected="false" data-faction="chocopie">초코파이</button>
-        <button role="tab" aria-selected="false" data-faction="beitle">비틀즈</button>
-        <button role="tab" aria-selected="false" data-faction="pocachip">포카칩</button>
-      </div>
-
-      <article class="faction-panel reveal" data-active-faction="goraebap">
-        <div class="faction-emblem" aria-hidden="true"><span>≈</span></div>
-        <div class="faction-copy">
-          <p class="faction-index">ORION SNACKVERSE</p>
-          <h3>고래밥<br />별바다 탐험대</h3>
-          <p class="faction-description">과자 모양의 해양 친구들과 별바다를 누비는 탐험 진영. 미지의 맛 행성을 발견하고 특별한 재료를 수집합니다.</p>
-          <div class="faction-trait"><span>플레이 성향</span><b>탐험 · 수집</b></div><a class="text-link faction-detail-link" href="goraebap.html">고래밥 자세히 보기 <span>↗</span></a>
-        </div>
-      </article>
-    </section>
 
     <section class="play" id="play" aria-labelledby="play-title">
       <div class="play-grid" aria-hidden="true"></div>

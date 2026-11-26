@@ -1,0 +1,27 @@
+.about-page .detail-hero-symbol { font-family: "Noto Sans KR",sans-serif; }
+.about-adventure { padding-bottom: 0; }
+.about-adventure-description { max-width: 720px; margin: 28px 0 0; color: #696e76; font-size: 16px; line-height: 1.9; }
+.developer-heading { margin-bottom: 40px; }
+.developer-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
+.developer-card { display: grid; grid-template-columns: 100px minmax(0,1fr); min-width: 0; border: 1px solid #deded8; background: #fff; }
+.developer-photo { position: relative; width: 100%; aspect-ratio: 1 / 1; min-height: 0; align-self: center; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; overflow: hidden; background: #f3f4f6; border-right: 1px solid #deded8; }
+.developer-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.developer-photo > span:last-child { position: relative; margin: 5px 0; padding: 3px 6px; background: #f3f4f6; font-size: 12px; color: #727780; }
+.profile-silhouette { position: absolute; width: 32px; height: 32px; top: 12px; border-radius: 50%; background: #d9dde2; }
+.profile-silhouette::after { content: ""; position: absolute; width: 76px; height: 58px; top: 39px; left: -22px; border-radius: 90px 90px 0 0; background: #d9dde2; }
+.developer-copy { align-self: center; min-width: 0; padding: 12px 24px; }
+.developer-role { margin: 0 0 3px; color: #df1530; font-size: 12px; font-weight: 700; }
+.developer-copy h3 { margin: 0 0 4px; font: 900 20px/1.25 "Noto Sans KR",sans-serif; letter-spacing: -.04em; }
+.developer-bio { margin: 0; color: #696e76; font-size: 14px; line-height: 1.65; }
+@media(max-width:600px) {
+  .developer-grid { gap: 10px; }
+  .developer-card { grid-template-columns: 90px minmax(0,1fr); }
+  .developer-photo > span:last-child { font-size: 12px; padding: 5px; }
+  .profile-silhouette { width: 28px; height: 28px; top: 14px; }
+  .profile-silhouette::after { width: 64px; height: 50px; top: 35px; left: -18px; }
+  .developer-copy { padding: 10px 12px; }
+  .developer-role { font-size: 12px; margin-bottom: 3px; }
+  .developer-copy h3 { font-size: 18px; margin-bottom: 4px; }
+  .developer-bio { font-size: 13px; }
+  .developer-heading { margin-bottom: 28px; }
+}

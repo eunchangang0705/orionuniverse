@@ -9,7 +9,6 @@ function selectSector(index, focus = false) {
   sectorButtons.forEach((button,i) => { button.setAttribute('aria-selected',String(i===index)); button.tabIndex = i===index ? 0 : -1; });
   document.querySelector('#sector-panel').setAttribute('aria-labelledby','sector-tab-'+index);
   document.querySelector('.destination-art').dataset.zone=index;
-  document.querySelector('.destination-core').textContent=data.symbol;
   document.querySelector('#sector-number').textContent=String(index+1).padStart(2,'0');
   ['kicker','description','theme','ready'].forEach(key => document.querySelector('#sector-'+key).textContent=data[key]);
   document.querySelector('#sector-title').innerHTML=data.title;
